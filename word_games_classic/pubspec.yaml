@@ -1,0 +1,35 @@
+name: word_games_classic
+description: "Word Games with Flutter."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  dart_core:
+    path: ../dart_core
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  collection: ^1.18.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: SimplyRounded
+      fonts:
+        - asset: assets/fonts/SimplyRounded/Simply Rounded.ttf
+        - asset: assets/fonts/SimplyRounded/Simply Rounded Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/data/shuffleWords.txt
+    - assets/data/splashWords.txt
+    - assets/data/dictionary.txt
+    - assets/data/10k.txt
